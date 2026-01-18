@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: kagglesdk
-  version: "0.1.14"
+  version: "0.1.15"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/kagglesdk-${{ version }}.tar.gz
-  sha256: ac37d7d7fcb9cf92d37319ec65b433686ca5c2f0f28a434a1104855a5f9c24cc
+  sha256: a26ecc64b1334b5a4c5cadd076bdeb503c04eab51c10d7cac2ff04959c9baba0
 
 build:
   number: 0
