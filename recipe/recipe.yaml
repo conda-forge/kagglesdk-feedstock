@@ -1,15 +1,15 @@
 schema_version: 1
 
 context:
-  name: kagglesdk
   version: "0.1.30"
+  python_min: "3.11"
 
 package:
-  name: ${{ name|lower }}
+  name: kagglesdk
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/kagglesdk-${{ version }}.tar.gz
+  url: https://pypi.org/packages/source/k/kagglesdk/kagglesdk-${{ version }}.tar.gz
   sha256: 47c6643066d965b7898e960fddcde07e151bea1ae1c1c381e25a5a041edf881d
 
 build:
