@@ -42,31 +42,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `kagglesdk` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install kagglesdk
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install kagglesdk
 ```
 
-It is possible to list all of the versions of `kagglesdk` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add kagglesdk
+# for installing globally
+pixi global install kagglesdk
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `kagglesdk` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search kagglesdk --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search kagglesdk --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search kagglesdk --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -78,6 +120,8 @@ mamba repoquery whoneeds kagglesdk --channel conda-forge
 # List dependencies of `kagglesdk`:
 mamba repoquery depends kagglesdk --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
